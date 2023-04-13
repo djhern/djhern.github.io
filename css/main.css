@@ -408,6 +408,11 @@ button:hover {
   margin-left: 20px;
 }
 
+.expbutton:hover {
+  background-color: #a4a4a4;
+  color: rgb(224, 224, 224);
+}
+
 /* Contact page specific */
 .talk {
   text-align: center;
@@ -422,7 +427,6 @@ button:hover {
   1px 1px 0 #cacaca; 
   margin-top: 100px;
 }
-
 
 header, main, footer {
 	margin: 0 auto;
