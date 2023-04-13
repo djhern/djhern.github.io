@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <script src="./javascript/main.js"></script>
+    <title>Experience</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="headerbar"></div>
+        <div class="logo"><a href="index.html"><span class="logoText">DH</span></a></div>
+        <div class="navBar">
+            <a href="about.html">About</a></span>
+            <span class="contact"><a href="contact.html">Contact</a></span>
+            <span class="experience" style="color: rgba(0,128,169,1); text-decoration: underline;"><a
+                    ref="expPage1.html">Experience</a></span>
+        </div>
+    </header>
+    <hr>
+
+    <p class="clickForExp">Click an experience for more information</p>
+
+    <div class="expgrid">
+
+
+        <input class="expbutton" id="education" type="button" value="Education" onclick="showDiv('Div1')" />
+
+
+        <input class="expbutton" id="gradchain" type="button" value="GradChain" onclick="showDiv('Div2')" />
+
+        <input class="expbutton" id="tryhackme" type="button" value="TryHackMe" onclick="showDiv('Div3')" />
+
+        <input class="expbutton" id="ncl" type="button" value="National Cyber League" onclick="showDiv('Div4')" />
+
+
+    </div>
+
+    <div class="explogogrid">
+        <img class="expLogo" src="./images/cbu.png" alt="CBU">
+
+        <img class="expLogo" src="./images/gradchain.png" alt="GradChain Logo">
+
+        <img class="expLogo" src="./images/tryhackme.png" alt="TryHackMe">
+
+        <img class="expLogo" src="./images/ncl.png" alt="National Cyber League">
+
+    </div>
+
+    <div class="expinfo" id="Div1">
+
+        <img class="expimage" src="./images/butte-cbu.jpg" alt="Education">
+
+        <p>
+            My college education began at Butte College in Oroville, California. At the age of thirteen, I was enrolled
+            into my first college class. After completing my college general education, I transferred to California
+            Baptist University in Riverside, California. Here, I am majoring in computer science and am interested in
+            the field of cybersecurity.
+        </p>
+
+    </div>
+
+    <div class="expinfo" id="Div2">
+
+        <img class="expimage" src="./images/gradchain2.png" alt="GradChain">
+        <p>
+
+            GradChain is a web application that I have been developing with a team as a school project. <br>
+            Utilizing blockchain technology to cryptographically verify documents, GradChain allows
+            universities to upload student diplomas for convenient verification. Employers searching for candidates can
+            then view a student’s diploma or credentials through the website, knowing each document is authentic and the
+            candidate is qualified.<br><br>
+        </p>
+
+        <h2>How does it work?</h2>
+        <img class="ipfsimage" src="./images/ipfs.png" alt="IPFS">
+
+        <p>
+            The Interplanetary File System (IPFS) is essentially a blockchain database that stores files as fragments of
+            data on thousands of devices and retrieves the file by rebuilding each fragment through a Content Identifier
+            (CID). By uploading a file to IPFS, GradChain can verify the untampered and genuine nature of the file for
+            the employer.
+
+            Click below to view the application’s GitHub repository.
+        </p>
+        <button class="linkbutton" onclick="openTab('https://github.com/SimeonRinkenberger/GradChain')">GradChain Repo</button>
+
+
+
+    </div>
+
+    <div class="expinfo" id="Div3">
+        <img class="expimage" src="./images/tryhackme2.png" alt="TryHackMe">
+
+        <p>
+            TryHackMe is an online platform that provides users with a simulated virtual environment to practice and
+            learn about cybersecurity and hacking. The platform offers various interactive and gamified cybersecurity
+            challenges and training modules that cover a wide range of topics, including penetration testing, web
+            application security, digital forensics, cryptography, and more.<br><br>
+
+            In 2021, I ran a blog in which I completed a TryHackMe room a week for ten weeks. The button below will take
+            you to this website.
+        </p>
+
+        <button class="linkbutton" onclick="openTab('https://digitallydave.github.io')">TryHackMe Blog</button>
+
+    </div>
+
+    <div class="expinfo" id="Div4">
+        <img class="expimage" src="./images/ncl2.png" alt="NCL">
+        <p>
+            The National Cyber League (NCL) is a biannual cybersecurity competition that provides participants with
+            hands-on experience in real-world cybersecurity scenarios.<br><br>
+
+            I competed in the 2021 fall competition. This competition provided me with experience in cryptography,
+            network traffic analysis, enumeration, and web application exploitation.
+        </p>
+    </div>
+
+
+
+    <div class="expinfo" id="Div"></div>
+
+
+
+
+
+</body>
+
+</html>
