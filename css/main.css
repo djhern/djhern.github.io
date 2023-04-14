@@ -32,7 +32,7 @@ body {
 .expgrid {
   position: fixed;
   top: 110px;
-  left: 90px;
+  left: 10%;
   display: grid; 
   grid-template-columns: 1fr; 
   grid-template-rows: 1fr 1fr 1fr 1fr; 
