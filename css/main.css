@@ -1,106 +1,101 @@
-.home::before {
-  content: "";
-  background-image: url("../images/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: absolute;
+body {
+  background: rgba(74, 74, 74, 1);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.5;
-  z-index: -1;
+  opacity: 1;
+  z-index: -1; 
 }
 
-body {
-  background: rgba(74, 74, 74, 1);
-  top: 0px;
-  left: 0px;
+header, main, footer {
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 20px;
+  color: #cacaca;
+  font-family: Inter;
+  font-size: 16px;
+}
+
+.contactmain {
+  margin-top: -120px;
 }
 
 .headerbar {
-  
   background: rgba(74, 74, 74, 1);
   position: fixed;
   top: 0;
-  height: 74px;
-  width: 100%;
+  left: 0;
+  height: 12.5%;
+  width: 100vw;
   z-index: 3;
-}
-
-.expgrid {
-  position: fixed;
-  top: 110px;
-  left: 10%;
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
-  gap: 20px; 
-}
-
-.explogogrid {
-  position: fixed;
-  top: 110px;
-  left: 10%;
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
-  gap: 36px; 
-}
-
-.DH {
-  color: rgba(0, 128, 168, 0.5);
-  position: absolute;
-  top: -20px;
-  left: 62px;
-  font-family: Cabin;
-  font-weight: Regular;
-  font-size: 600px;
-  text-align: left;
-  z-index: -1;
+  min-height: 50px;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 5vw;
+  height: 5vw;
+  min-width: 50px;
+  min-height: 50px;
   background: rgba(0, 128, 169, 1);
   opacity: 1;
   position: fixed;
   border-radius: 50%;
-  top: 10px;
-  left: 48px;
+  top: 1%;
+  left: 5%;
   z-index: 3;
-}
-
-.logoText {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgba(255, 255, 255, 1);
   font-family: Inter;
   font-weight: Bold;
   font-size: 25px;
-  position: absolute;
-  top: 19%;
-  left: 14%;
 }
 
 hr {
   position: fixed;
-  top: 65px;
-  right: 30px;
-  width: 95%;
+  top: 11%;
+  left: 4%;
+  width: 92%;
+  z-index: 3;
+  display: block;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
   z-index: 3;
 }
 
-.navBar {
+.navbar ul li a.active {
+  color: rgba(0, 128, 169, 1);
+  text-decoration: underline;
+}
+
+.navbar ul {
+  list-style: none;
+  margin-top: 3%;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 30px;
+}
+
+.navbar li:last-child {
+  margin-right: 30px;
+}
+
+.navbar a {
+  display: block;
   color: rgba(205, 204, 204, 1);
   font-family: Inter;
   font-weight: Bold;
-  font-size: 18px;
-  position: fixed;
-  top: 26px;
-  left: 70%;
-  z-index: 3;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .about {
@@ -117,9 +112,11 @@ hr {
   left: 260px;
 }
 
-.about:hover,
-.contact:hover,
-.experience:hover {
+.navbar ul li a:hover {
+  color: rgb(137, 137, 137);
+}
+
+.logo:hover {
   color: rgb(137, 137, 137);
 }
 
@@ -131,29 +128,56 @@ a {
 /* Home page specific */
 .gradient {
   width: 100%;
-  height: 500px;
+  height: 75%;
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   border: 1px solid linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   z-index: 1;
 }
 
-.bottomBorder {
-  position: absolute;
-  top: 500px;
-  left: 0px;
-  height: 209px;
+.bottomborder {
+  height: 25%;
   width: 100%;
   background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.home::before {
+  content: "";
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.dh {
+  color: rgba(0, 128, 168, 0.5);
+  position: fixed;
+  top: -10%;
+  left: 62px;
+  font-family: Cabin;
+  font-weight: Regular;
+  font-size: 600px;
+  text-align: left;
+  z-index: -1;
 }
 
 .name {
   color: rgba(213, 213, 213, 1);
   position: absolute;
-  top: 400px;
-  left: 120px;
+  top: 65%;
+  left: 10%;
   font-family: Inter;
   font-weight: Regular;
   font-size: 60px;
@@ -164,13 +188,27 @@ a {
   width: 825px;
   color: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 470px;
-  left: 124px;
+  top: 75%;
+  left: 10%;
   font-family: Inter;
   font-weight: Regular;
   font-size: 20px;
   text-align: left;
   z-index: 2;
+}
+
+.experiencebutton {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: large;
+  top: 95%;
+  left: 10%;
+  width: 250px;
+  height: 60px;
+  background: rgba(0, 128, 169, 1);
+  border-radius: 20px;
+  z-index: 2;
+  margin-bottom: 10%;
 }
 
 button {
@@ -183,14 +221,29 @@ button:hover {
 }
 
 /* About page specific */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainabout {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
 .textbox1 {
-  width: 560px;
-  height: 170px;
+  width: 55%;
+  height: 35%;
   background: rgba(255, 255, 255, 0.1599999964237213);
   opacity: 1;
   position: absolute;
-  top: 130px;
-  left: 515px;
+  top: 0;
+  right: 0;
+  margin-top: 3%;
+  margin-right: 3%;
   border: 1px solid rgba(0, 128, 169, 1);
   overflow: hidden;
   padding: 30px;
@@ -204,13 +257,15 @@ button:hover {
 }
 
 .textbox2 {
-  width: 560px;
-  height: 170px;
+  width: 55%;
+  height: 35%;
   background: rgba(255, 255, 255, 0.1599999964237213);
   opacity: 1;
   position: absolute;
-  top: 380px;
-  left: 200px;
+  bottom: 0;
+  left: 0;
+  margin-left: 3%;
+  margin-bottom: 3%;
   border: 1px solid rgba(0, 128, 169, 1);
   overflow: hidden;
   padding: 30px;
@@ -224,38 +279,28 @@ button:hover {
 
 .picture1 {
   position: absolute;
-  top: 110px;
-  left: 185px;
+  top: 0;
+  left: 0;
 }
 
 .picture2 {
   position: absolute;
-  top: 333px;
-  left: 800px;
+  bottom: 0;
+  right: 0;
 }
 
-.frame1 {
-  width: 297.5px;
-  height: 233.75px;
+.frame {
+  width: 380px;
+  height: 260px;
   background: rgba(217, 217, 217, 1);
   opacity: 1;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 
-.frame2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 276.25px;
-  height: 212.5px;
-  background: rgba(0, 128, 169, 1);
-}
-
-.aboutImage1 {
-  width: 255px;
-  height: 191.25px;
+.aboutimage1 {
+  width: 86%;
+  height: 83%;
+  border: solid 10px rgba(0, 128, 169, 1);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -265,9 +310,10 @@ button:hover {
   background-size: cover;
 }
 
-.aboutImage2 {
-  width: 255px;
-  height: 191.25px;
+.aboutimage2 {
+  width: 86%;
+  height: 83%;
+  border: solid 10px rgba(0, 128, 169, 1);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -278,42 +324,16 @@ button:hover {
 }
 
 /* Experience page specific */
-.clickForExp {
-  width: 325px;
+.clickforexp {
+  width: 25%;
   color: rgba(205, 204, 204, 1);
   position: absolute;
-  top: 307px;
-  left: 750px;
+  margin-top: 20%;
+  margin-left: 60%;
   font-family: Inter;
   font-weight: Regular;
   font-size: 20px;
   text-align: center;
-}
-
-.experiencebutton {
-  color: rgb(255, 255, 255);
-  position: absolute;
-  font-size: large;
-  top: 575px;
-  left: 120px;
-  width: 250px;
-  height: 60px;
-  background: rgba(0, 128, 169, 1);
-  border-radius: 20px;
-  z-index: 2;
-}
-
-.expbutton {
-  width: 475px;
-  height: 100px;
-  background: rgba(205, 204, 204, 1);
-  color: #444444;
-  font-family: Inter;
-  font-size: 22px;
-  opacity: 1;
-  border-radius: 20px;
-  z-index: 2;
-  border: none;
 }
 
 .gradchain {
@@ -322,13 +342,11 @@ button:hover {
   left: -30px;
 }
 
-.expLogo {
-  width: 80px;
-  height: 80px;
+.explogo {
+  max-width: 15%;
+  max-height: 80%;
   opacity: 1;
-  position: relative;
-  top: 8px;
-  left: 10px;
+  margin-left: 5%;
   background-position: center center;
   background-size: cover;
   border-radius: 50%;
@@ -345,11 +363,56 @@ button:hover {
   text-align: left;
 }
 
+.expinfocontainer {
+  margin-left: 10%;
+}
+
+.expgrid {
+  width: 40%;
+  height: 75%;
+  position: fixed;
+  top: 18%;
+  left: 8%;
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 5%; 
+}
+
+.buttoncontainer {
+  background: rgba(205, 204, 204, 1);
+  color: #444444;
+  font-family: Inter;
+  font-size: 22px;
+  opacity: 1;
+  border-radius: 20px;
+  z-index: 2;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.expbutton {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: #444444;
+  font-family: Inter;
+  font-size: 22px;
+  opacity: 1;
+  border-radius: 20px;
+  z-index: 1;
+  border: none;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
 .expinfo {
   position: absolute;
-  top: 110px;
-  left: 600px;
-  width: 550px;
+  right: 0;
+  width: 40%;
+  margin: 5%;
   background: rgba(205, 204, 204, 1);
   font-size: 20px;
   font-family: Inter;
@@ -408,9 +471,15 @@ button:hover {
   margin-left: 20px;
 }
 
-.expbutton:hover {
+.buttoncontainer:hover {
   background-color: #a4a4a4;
   color: rgb(224, 224, 224);
+}
+
+@media (max-width: 600px) {
+  .explogo {
+    display: none;
+  }
 }
 
 /* Contact page specific */
@@ -425,20 +494,7 @@ button:hover {
   1px -1px 0 #cacaca,
   -1px 1px 0 #cacaca,
   1px 1px 0 #cacaca; 
-  margin-top: 100px;
-}
-
-header, main, footer {
-	margin: 0 auto;
-	max-width: 700px;
-	padding: 20px;
-  color: #cacaca;
-  font-family: Inter;
-  font-size: 16px;
-}
-
-main {
-  margin-top: -120px;
+  margin-top: 7%;
 }
 
 label {
