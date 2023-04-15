@@ -253,7 +253,12 @@ button:hover {
   font-size: 18px;
   font-family: Inter;
   font-weight: Regular;
-  text-align: left;
+  display: flex;
+  align-content: center;
+}
+
+.textbox1 span {
+  margin: auto;
 }
 
 .textbox2 {
@@ -274,7 +279,12 @@ button:hover {
   font-size: 18px;
   font-family: Inter;
   font-weight: Regular;
-  text-align: left;
+  display: flex;
+  align-content: center;
+}
+
+.textbox2 span {
+  margin: auto;
 }
 
 .picture1 {
@@ -290,8 +300,8 @@ button:hover {
 }
 
 .frame {
-  width: 380px;
-  height: 260px;
+  width: 30vw;
+  height: 42vh;
   background: rgba(217, 217, 217, 1);
   opacity: 1;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
