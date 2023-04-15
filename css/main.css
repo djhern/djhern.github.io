@@ -401,7 +401,7 @@ button:hover {
   font-size: 22px;
   opacity: 1;
   border-radius: 20px;
-  z-index: 1;
+  z-index: 3;
   border: none;
   display: flex;
   justify-content: center;
