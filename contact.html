@@ -13,18 +13,25 @@
 
 <body>
     <header>
-        <div class="headerbar"></div>
-        <div class="logo"><a href="index.html"><span class="logoText">DH</span></a></div>
-        <div class="navBar"><span class="about"><a href="about.html">About</a></span><span class="contact"
-                style="color: rgba(0,128,169,1); text-decoration: underline;"><a
-                    href="contact.html">Contact</a></span><span class="experience"><a
-                    href="expPage.html">Experience</a></span></div>
+        <div class="headerbar">
+            <hr>
+        </div>
+        <a href="index.html"><div class="logo">DH</div></a>
+
+        <nav class="navbar">
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="expPage.html">Experience</a></li>
+              <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+          </nav>
+
     </header>
-    <hr>
+
 
     <p class="talk"><b>Let's Talk</b></p>
 
-    <main>
+    <main class="contactmain">
         <form method="post" action="submit-form.php">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" required>
@@ -46,6 +53,4 @@
         <p>&copy; 2023 David Hernandez. All Rights Reserved.</p>
     </footer>
 </body>
-
 </html>
-
